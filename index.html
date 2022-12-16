@@ -5,4 +5,37 @@
         <title>Java チートシート</title>
         <meta charset="UTF-8">
     </head>
+    <body>
+        <main>
+            <section>
+                <section id="Write_Hello-World">
+                    <h1>Hello Worldを書こう</h1>
+                    <p>Mainクラスにmain関数を置いて、println関数書いて、終わり!! 閉廷!!</p>
+                    <p>
+                        クラス名はファイル名と同じ名前にするのが慣習らしい。そして、ファイル名の始めを大文字にしないといけない。らしい。
+                        エントリポイントは、main関数と呼ばれる特殊な関数を書く。”public”と”static”、そして引数として"String[] args"を書く。
+                        Javaにおけるprint関数(改行込み)は、System.out.println()。そのまま書けばほとんどの場合実行可能。
+                    </p>
+                    <h2>ソースコード例</h2>
+                    <pre>
+                        <code>
+public class Main{
+    public static void main(String[] args){
+        System.out.println("Hello!!");
+    }
+}
+                        </code>
+                    </pre>
+                </section>
+                <aside>
+                    <h3>publicを付けないとどうなるか</h3>
+                    <p>
+                        publicを付けないと、単純に言うと他のプログラムから見えなくなる。
+                        つまり、classの”public”を消すとMainクラスが見つからなくなり、エントリポイントの”public”も同様。
+                        コンパイルは成功するが、実行が不可能になる。
+                    </p>
+                </aside>
+            </section>
+        </main>
+    </body>
 </html>
